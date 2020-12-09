@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#intro_example {
+    height: 610px;
+    width: 100%;
+}
+
+#learn {
+    padding: 12px;
+    background-color: rgb(87, 182, 185);
+    border-radius: 20px;
+    font-family: 'Krub', sans-serif;
+}
+
+#sideimage1 {
+    width: 70%;
+    height: 80%;
+    border-radius: 50px 20px 50px 20px;
+}
+
+#sideimage2 {
+    border-radius: 50px 20px 50px 20px;
+}
+
+.jumbo {
+    background-image: url('images/sign.jpg');
+    width: 100%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(87, 182, 185);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-link {
+    font-family: 'Krub', sans-serif;
+    font-weight: 300px;
+}
+
+#heading {
+    font-family: 'Krub', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#para {
+    font-family: 'Krub', sans-serif;
+    font-size: 1.5vw;
+    opacity: 1;
+    color: whitesmoke;
+}
+
+.banner {
+    background-image: url('/home/cedcoss/Desktop/Training/office.jpeg');
+    width: 100%;
+}
+
+#card1 {
+    box-shadow: 15px 15px rgb(87, 182, 185);
+}
+
+#grad {
+    background-image: linear-gradient(to right, rgb(87, 182, 185), white);
+    padding: 2%;
+}
+
+#slideShow {
+    position: relative;
+    margin: auto;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+ 
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#masked{
+    position: absolute;
+    top: 0;
+    margin: 5%;
+    margin-top: 5%;
+    padding: 5%;
+}
+.head_m{
+    text-align: justify;
+    font-size: 18px;
+}
+.head_m h1{
+    text-align: center;
+    font-size: 5px;
+    font-weight: 100;
+}
+.learn_m{
+    text-align: center;
+}
