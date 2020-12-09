@@ -85,8 +85,15 @@ input[type=submit] {
 
 #slideShow {
     position: relative;
-    margin: auto;
+    margin: 0;
+    
+   
+   
+  
 }
+
+
+
 
 .next {
     cursor: pointer;
