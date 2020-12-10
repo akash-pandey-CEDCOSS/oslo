@@ -5,13 +5,11 @@ $("document").ready(function () {
     function inter() {
         interval_ = setInterval(function () {
             counter++;
-            if (counter >2) {
+            if (counter > 2) {
                 counter = 0;
             }
             $(".page-item").removeClass("active");
-            
             $(".page-item").eq(counter).addClass("active");
-            console.log(counter);
 
             inWrap.animate({ left: "0%" }, 1000, function () {
                 inWrap.css("left", "-100%");
