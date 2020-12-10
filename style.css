@@ -83,129 +83,80 @@ input[type=submit] {
     padding: 2%;
 }
 
-/* #slideShow {
-    position: relative;
-    margin: 0;
-    
-   
-   
-  
-} */
-
-
-
-/* 
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
- 
-    right: 0;
-    border-radius: 3px 0 0 3px;
-} */
-
-/* .prev {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    
-} */
-
-/* .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-} */
-/* #masked{
-    position: absolute;
-    top: 0;
-    margin: 5%;
-    margin-top: 5%;
-    padding: 5%;
-}
-.head_m{
-    text-align: justify;
-    font-size: 18px;
-}
-.head_m h1{
-    text-align: center;
-    font-size: 5px;
-    font-weight: 100;
-}
-.learn_m{
-    text-align: center;
-} */
-
-.cont{
+.cont {
     display: flex;
-    height:80vh ;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.slider-wrapper{
+
+.slider-wrapper {
     width: 1100px;
     height: 600px;
     overflow: hidden;
     margin-top: 5%;
-  
-    
-
+    position: relative;
 }
-.inner-wrapper{
+
+.inner-wrapper {
     width: 500%;
     height: 100%;
     position: relative;
     left: -100%;
 }
-.slide{
+
+.slide {
     width: calc(100% / 5);
     height: 100%;
     float: left;
 }
-.slide img{
+
+.slide img {
     width: 100%;
 }
 
-
-.button{
+.button {
     width: 30px;
     height: 30px;
     border-top: 2px solid black;
     position: absolute;
     cursor: pointer;
-
 }
 
-.prev{
+.prev {
     border-left: 2px solid black;
     left: 10%;
     transform: rotate(-45deg);
 }
 
-.next{
+.next {
     border-right: 2px solid black;
     right: 10%;
     transform: rotate(45deg);
 }
-.navi{
+
+.navi {
     position: absolute;
     bottom: 0;
-
 }
-
+.board{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    color: white;
+    padding: 5%;
+    margin: 15%;
+    bottom: 0;
+}
+.active .fa{
+    color: white !important;
+}
+#learn{
+    padding: 12px;
+    background-color: rgb(87, 182, 185);
+    border-radius: 20px;
+    font-family: 'Krub', sans-serif;
+    
+  }

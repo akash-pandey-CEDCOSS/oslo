@@ -1,13 +1,16 @@
 $("document").ready(function () {
     var interval_;
-    counter = 1;
+    counter = 0;
     var inWrap = $(".inner-wrapper");
     function inter() {
         interval_ = setInterval(function () {
             counter++;
-            if (counter == 4) {
-                counter = 1;
+            if (counter >2) {
+                counter = 0;
             }
+            $(".page-item").removeClass("active");
+            
+            $(".page-item").eq(counter).addClass("active");
             console.log(counter);
 
             inWrap.animate({ left: "0%" }, 1000, function () {
