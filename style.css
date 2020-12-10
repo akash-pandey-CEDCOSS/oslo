@@ -83,18 +83,18 @@ input[type=submit] {
     padding: 2%;
 }
 
-#slideShow {
+/* #slideShow {
     position: relative;
     margin: 0;
     
    
    
   
-}
+} */
 
 
 
-
+/* 
 .next {
     cursor: pointer;
     position: absolute;
@@ -110,9 +110,9 @@ input[type=submit] {
  
     right: 0;
     border-radius: 3px 0 0 3px;
-}
+} */
 
-.prev {
+/* .prev {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -126,12 +126,12 @@ input[type=submit] {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     
-}
+} */
 
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
-#masked{
+} */
+/* #masked{
     position: absolute;
     top: 0;
     margin: 5%;
@@ -149,4 +149,63 @@ input[type=submit] {
 }
 .learn_m{
     text-align: center;
+} */
+
+.cont{
+    display: flex;
+    height:80vh ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+.slider-wrapper{
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    margin-top: 5%;
+  
+    
+
+}
+.inner-wrapper{
+    width: 500%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+}
+.slide{
+    width: calc(100% / 5);
+    height: 100%;
+    float: left;
+}
+.slide img{
+    width: 100%;
+}
+
+
+.button{
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid black;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.prev{
+    border-left: 2px solid black;
+    left: 10%;
+    transform: rotate(-45deg);
+}
+
+.next{
+    border-right: 2px solid black;
+    right: 10%;
+    transform: rotate(45deg);
+}
+.navi{
+    position: absolute;
+    bottom: 0;
+
+}
+

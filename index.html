@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.cycle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="style.css">
   <title>
@@ -58,45 +58,71 @@
 
 
   <!-- curently working on -->
-  <!-- <div class="container-fluid"> -->
-  <div id="slideShow">
-    
-   
-   <img src="images/sl6.jpg" id="sl4" class="img-fluid">
+  <div class="cont">
+
+    <div class="slider-wrapper">
+        <div class="inner-wrapper">
+            <div class="slide"><img src="images/sl6.jpg" id="sl4" class="img-fluid"></div>
+            <div class="slide"><img src="images/sl6.jpg" id="sl4" class="img-fluid"></div>
+            <div class="slide"><img src="images/sl6.jpg" id="sl4" class="img-fluid"></div>
+            <div class="slide"><img src="images/sl6.jpg" id="sl4" class="img-fluid"></div>
+            <div class="slide"><img src="images/sl6.jpg" id="sl4" class="img-fluid"></div>
+
+            </div>
+
+        </div>
+        <nav aria-label="Page navigation " class="navi">
+          <ul class="pagination justify-content-center">
+           
+            <li class="page-item"><a class="page-link bg-color" style="background-color: transparent; border: none;" href="#"><i class="fa fa-circle bg-color" aria-hidden="true" style="background-color: transparent ; color: black"></i></a></li>
+            <li class="page-item"><a class="page-link bg-color" style="background-color: transparent; border: none;" href="#"><i class="fa fa-circle bg-color" aria-hidden="true" style="background-color: transparent ; color: black"></i></a></li>
+            <li class="page-item"><a class="page-link bg-color" style="background-color: transparent; border: none;" href="#"><i class="fa fa-circle bg-color" aria-hidden="true" style="background-color: transparent ; color: black"></i></a></li>
+            <li class="page-item"><a class="page-link bg-color" style="background-color: transparent; border: none;" href="#"><i class="fa fa-circle bg-color" aria-hidden="true" style="background-color: transparent ; color: black"></i></a></li>
+            <li class="page-item"><a class="page-link bg-color" style="background-color: transparent; border: none;" href="#"><i class="fa fa-circle bg-color" aria-hidden="true" style="background-color: transparent ; color: black"></i></a></li>
+            
+           
+          </ul>
+        </nav>
+        <div class="button prev"></div>
+        <div class="button next"></div>
+    </div>
+
+  <!-- <img src="images/sl6.jpg" id="sl4" class="img-fluid">
   
  
    <img src="images/sl7.jpg" id="sl4" class="img-fluid">
 
   
     
-    <img src="images/sl8.jpg" class="img-fluid">
- 
-    <!-- //adding masked -->
-    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7) " id="masked">
-      <!-- <div class=" "> -->
-      <div class="text-white head_m">
-        <h1 class="mt-5 " id="heading">
-          Unleash your <span style="color:rgb(87, 182, 185) ;">Potential</span>
-        </h1>
-        <p class="mt-5 mb-5" id="para">I am a text, double click me to edit the text or to change the way I look.
-          You can change the font, size,color,
-          and so much more. For advanced styling options, click on "more" located on the right hand side of the
-          page.
-        </p>
-        <p class="mt-5 mb-4 learn_m"><span id="learn">Learn more</span></p>
-      </div>
-      <!-- </div> -->
+    <img src="images/sl8.jpg" class="img-fluid"> -->
+  <!-- </div> -->
 
-    </div>
+  <!-- //adding masked -->
+  <!-- <div class="mask" style="background-color: rgba(0, 0, 0, 0.7) " id="masked"> -->
+    <!-- <div class=" "> -->
+    <!-- <div class="text-white head_m">
+      <h1 class="mt-5 " id="heading">
+        Unleash your <span style="color:rgb(87, 182, 185) ;">Potential</span>
+      </h1>
+      <p class="mt-5 mb-5" id="para">I am a text, double click me to edit the text or to change the way I look.
+        You can change the font, size,color,
+        and so much more. For advanced styling options, click on "more" located on the right hand side of the
+        page.
+      </p>
+      <p class="mt-5 mb-4 learn_m"><span id="learn">Learn more</span></p>
+    </div> -->
+    <!-- </div> -->
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
+  <!-- </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div> -->
   <!-- </div> -->
 
 
   <!-- currently working above -->
-  <div class="container-fluid mt-5 ml-5 mb-5" id="about">
+  <div class="container-fluid p-5 mt-5 mb-5" id="about" style="margin-top: 5%;">
     <div class="row mr-4">
       <div class="col-md-6 col-sm-6 ">
         <p style="color: black;" mb-5>01//ABOUT</p>
@@ -161,8 +187,7 @@
 
       <div class="col-md-1 col-sm-2>"></div>
       <div class="col-md-5 col-sm-6" style="position: relative;">
-        <img src="images/oslo1.jpeg" id="sideimage2"
-          style="width: 70%; height: 60%; margin-left:10%; margin-top: 10%;">
+        <img src="images/oslo1.jpeg" id="sideimage2" style="width: 70%; height: 60%; margin-left:10%; margin-top: 10%;">
         <div
           style="height:60%; width: 70%;box-shadow: 1px 13px rgb(87, 182, 185);border:2px solid rgb(87, 182, 185) ;position:absolute; border-radius: 50px 20px 50px 20px; top: 15%; right: 25%; z-index: -1;">
 
@@ -271,7 +296,7 @@
 
 
   <div class="jumbo" id="#navbarSignup">
-    <div class="jumbotron jumbotron-fluid bg-dark img-fluid" style="opacity: 0.7;">
+    <div class="jumbotron jumbotron-fluid bg-dark img-fluid" style="opacity: 0.8;">
 
       <div class="container">
         <div class="row">
@@ -334,6 +359,6 @@
   </footer>
   </div>
 </body>
-<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="main.js"></script>
 
 </html>
