@@ -7,7 +7,7 @@ $("document").ready(function () {
 
 
             interval_ = setInterval(function () {
-                console.log(interval_);
+             
                 counter++;
                 if (counter > 2) {
                     counter = 0;
@@ -23,6 +23,39 @@ $("document").ready(function () {
             }, 3000);
         }
     } inter();
+
+    $("#div1").on("click",function(){
+        inWrap.css("left", "0%");
+        clearInterval(interval_);
+        interval_=null;
+        counter++;
+        $(".page-item").removeClass("active");
+        $(".page-item").eq(counter).addClass("active");
+        $(".slide").first().before($(".slide").last());
+        inter();
+    })
+
+    $("#div2").on("click",function(){
+        inWrap.css("left", "0%");
+        clearInterval(interval_);
+        interval_=null;
+        counter++;
+        $(".page-item").removeClass("active");
+        $(".page-item").eq(counter).addClass("active");
+        $(".slide").first().before($(".slide").last());
+        inter();
+    })
+
+    $("#div3").on("click",function(){
+        inWrap.css("left", "0%");
+        clearInterval(interval_);
+        interval_=null;
+        counter++;
+        $(".page-item").removeClass("active");
+        $(".page-item").eq(counter).addClass("active");
+        $(".slide").first().before($(".slide").last());
+        inter();
+    })
 
     $(".prev").on("click", function () {
         clearInterval(interval_);
